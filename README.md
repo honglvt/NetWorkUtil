@@ -9,9 +9,9 @@
 # 使用</br>
 ## 1）首先新建一个VM类，用于网络请求</br>
 ## 2) 利用Map操作符把服务器的DTO结构转为VO结构
-class MainVM {
-    fun getData(callback: DesCallBack<HCVO>) {
-        return ApiClient
+    class MainVM {
+         fun getData(callback: DesCallBack<HCVO>) {
+            return ApiClient
                 .instance
                 .getApiService()
                 .test()
@@ -20,8 +20,8 @@ class MainVM {
                     it.transform()
                 }
                 .subscribe(Destiny(callback))
+         }
     }
-}
   
 ## 3) 在业务层直接调用MainVM().getData(callback)
     fun request() {
