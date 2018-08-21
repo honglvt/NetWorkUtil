@@ -5,6 +5,10 @@ import com.medtap.network.library.ObserverCallBack.DesCallBack
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 
+
+/**
+ * subscribe的时候使用这个接口
+ */
 class Destiny<T> : Observer<T> {
     var callBack: DesCallBack<T>? = null
 

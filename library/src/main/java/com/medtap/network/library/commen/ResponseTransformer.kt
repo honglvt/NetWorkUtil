@@ -5,6 +5,9 @@ import io.reactivex.Observable
 import io.reactivex.ObservableSource
 import io.reactivex.functions.Function
 
+/**
+ * 统一处理error，剥离data层
+ */
 class ResponseTransformer {
 
 
